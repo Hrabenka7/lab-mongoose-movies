@@ -1,0 +1,17 @@
+{{!-- // ##################################### FIFTH PAGE TO START - this is the what's in the layout BODY ########################## // --}}
+
+<ul>
+  {{#each movies}}  {{!-- name of the table  --}}
+
+  <li>
+    <p>{{this.name}}</p>
+    <p>{{this.year}}</p>
+    <a href="/movies/{{this._id}}">See details</a>
+  </li>
+
+  {{/each}}
+  <button class="new-movie"><a href="/movies/create-movie">Create a new movie</a></button>
+</ul>
+
+
+

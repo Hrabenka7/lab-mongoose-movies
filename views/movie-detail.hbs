@@ -1,0 +1,13 @@
+{{!-- // ##################################### SEVENTH PAGE TO START this is the what's in the layout BODY ########################## // --}}
+
+
+<ul>
+ <li> <h3>{{movie.name}}</h3></li>
+  <li>  <h3>{{movie.year}}</h3></li>
+  
+  <form method="POST" action="/movies/{{movie._id}}/delete">
+    <button>Delete</button>
+  </form>
+  
+  <a href="/">Back</a>
+</ul>
